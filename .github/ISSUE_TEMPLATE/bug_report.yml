@@ -1,0 +1,43 @@
+name: Bug report
+description: Something does not work as documented
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Security problems must not be reported here.** Use the private advisory link on the issue chooser page.
+  - type: input
+    id: version
+    attributes:
+      label: Package and version
+      placeholder: nextfinder@0.0.2
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node.js, Next.js, OS, storage adapter, auth library
+      placeholder: Node 24, Next.js 16, macOS, S3 adapter, Auth.js
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A link to a minimal repository or StackBlitz, or exact steps.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Remove tokens, cookies and personal data first.
+      render: shell

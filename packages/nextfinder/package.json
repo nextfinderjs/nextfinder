@@ -1,0 +1,20 @@
+{
+  "name": "nextfinder",
+  "version": "0.0.2",
+  "description": "Secure, storage-agnostic file manager for Next.js (work in progress).",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextfinderjs/nextfinder.git",
+    "directory": "packages/nextfinder"
+  },
+  "homepage": "https://github.com/nextfinderjs/nextfinder#readme",
+  "bugs": {
+    "url": "https://github.com/nextfinderjs/nextfinder/issues"
+  },
+  "keywords": ["nextjs", "file-manager", "file-browser", "storage", "upload"],
+  "files": ["README.md", "LICENSE"],
+  "publishConfig": {
+    "access": "public"
+  }
+}
